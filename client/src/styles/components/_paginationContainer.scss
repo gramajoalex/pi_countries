@@ -1,0 +1,40 @@
+.active-element {
+  background-color: rgb(255, 196, 0) !important;
+  // border: solid 1px rgba(0, 0, 0, 0.322);
+  p {
+    color: rgb(0, 0, 0) !important;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  div {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    cursor: pointer;
+    &:first-child,
+    &:last-child {
+      width: 50px;
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.616);
+    }
+    p {
+      font-size: 18px;
+      font-family: "Arial Narrow Bold", sans-serif;
+      color: white;
+    }
+  }
+}

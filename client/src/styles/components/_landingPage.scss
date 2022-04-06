@@ -1,0 +1,69 @@
+.landing-container {
+  background-image: url(../../assets/landing1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: grayscale(1) brightness(0.8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes showColor {
+}
+
+.landing-info-container {
+  text-align: center;
+  transform: translateY(-17vh);
+  h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transform: translateY(-40px);
+    font-size: 3.5em;
+    color: white;
+    text-transform: uppercase;
+  }
+  p {
+    transform: translateY(-30px);
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.281);
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+  }
+  button {
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.5s;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Arial Narrow";
+    font-size: 1em;
+    position: relative;
+    color: white;
+    border: solid 2px rgb(238, 255, 0);
+    cursor: pointer;
+    &:hover {
+      color: black;
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      background-color: rgb(238, 255, 0);
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      transition: all 0.4s ease;
+      width: 0%;
+      height: 100%;
+    }
+  }
+}
